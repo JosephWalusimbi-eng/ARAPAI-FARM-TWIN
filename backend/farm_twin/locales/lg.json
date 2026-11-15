@@ -195,7 +195,7 @@
     "sms.plan": "ARAPAI FARM TWIN plan, oluvannyuma lwa {previous}:\n{plan}\nEnteekateeka za {n} ezisinga obulungi ze twageraageranya.",
     "sms.slot": "{season}: ekimera {crop}",
     "sms.concern": "Okwegendereza: {concern}",
-    "sms.footer": "Tukakasa tutya: {level}. Ebikwata ku NASA okutuuka ku {through}. Okuwa amagezi kwokka; buuliza omukungu wo.",
+    "sms.footer": "Tukakasa tutya: {level}. Ebikwata ku NASA okutuuka ku {through}. Okuwa amagezi kwokka.",
     "ussd.main": "ARAPAI FARM TWIN\n1. Amagezi ga sizoni ejja\n2. Enteekateeka yonna ku SMS ({price})\n3. Enkuba\n4. Ettaka\n5. Olulimi\n6. Obuyambi",
     "ussd.next": "Simba {crop} mu {season}. Oluvannyuma {crop2}, ne {crop3}. Bwe tuli abakakafu: {level}. Londa 2 ku menu enkulu okufuna enteekateeka yonna ku SMS.",
     "ussd.pay_confirm": "Enteekateeka y'ebiseera byonna 3 okuyita ku SMS: {price}.\n1. Sasula ne MTN MoMo\n2. Komya",

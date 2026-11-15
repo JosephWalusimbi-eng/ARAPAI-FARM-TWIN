@@ -195,7 +195,7 @@
     "sms.plan": "MPANGO WA ARAPAI FARM TWIN, baada ya {previous}:\n{plan}\nMpango bora wa {n} tuliofananisha.",
     "sms.slot": "{season}: mmea {crop}",
     "sms.concern": "Kwa uangalifu: {concern}",
-    "sms.footer": "Tuna uhakika gani: {level}. Data ya NASA hadi {through}. Ni ushauri tu; muulize afisa wako wa ugani.",
+    "sms.footer": "Tuna uhakika gani: {level}. Data ya NASA hadi {through}. Ni ushauri tu.",
     "ussd.main": "ARAPAI FARM TWIN\n1. Ushauri wa msimu ujao\n2. Mpango kamili kwa SMS ({price})\n3. Mvua\n4. Udongo\n5. Lugha\n6. Msaada",
     "ussd.next": "Panda {crop} {season}. Kisha {crop2}, kisha {crop3}. Uhakika wetu: {level}. Chagua 2 kwenye menyu kuu kupata mpango kamili kwa SMS.",
     "ussd.pay_confirm": "Mpango kamili wa msimu 3 kwa SMS: {price}.\n1. Lipa kwa kutumia MTN MoMo\n2. Futa",

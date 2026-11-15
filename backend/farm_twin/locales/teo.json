@@ -162,7 +162,7 @@
     "sms.plan": "ARAPAI FARM TWIN plan, akaulo naka {previous}:\n{plan}\nAitemonokineta nuajokak kakere nuka {n} nuapotu sio itirianata.",
     "sms.slot": "{season}: ipikak {crop}",
     "sms.concern": "Abeit: {concern}",
-    "sms.footer": "Ebeit oni ajenun: {level}. Akiro nuka NASA kitoni {through}. Erai aicoreta bon; ingit eswaman kon.",
+    "sms.footer": "Ebeit oni ajenun: {level}. Akiro nuka NASA kitoni {through}. Erai aicoreta bon.",
     "ussd.main": "ARAPAI FARM TWIN\n1. Aicoreta nuka apak na etupakini\n2. Aitemonokineta kere kotoma SMS ({price})\n3. Aanyanario naka edou\n4. Alupok\n5. Angajep\n6. Aingarakinio",
     "ussd.pay_started": "Koany esimu kon kosodi acamun aitac naka {price} MTN MoMo. Ebuni ainapeta kon adolun kowai loka SMS.",
     "ussd.pay_failed": "Mam epedorio ageun aitac ({reason}). Kelipit kotam bobo ekaulo.",

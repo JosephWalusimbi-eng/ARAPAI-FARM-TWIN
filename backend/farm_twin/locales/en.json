@@ -206,7 +206,7 @@
     "sms.plan": "ARAPAI FARM TWIN plan, after {previous}:\n{plan}\nBest of {n} plans we compared.",
     "sms.slot": "{season}: plant {crop}",
     "sms.concern": "Careful: {concern}",
-    "sms.footer": "How sure we are: {level}. NASA data to {through}. Advice only; ask your extension officer.",
+    "sms.footer": "How sure we are: {level}. NASA data to {through}. Advice only.",
     "ussd.main": "ARAPAI FARM TWIN\n1. Next season advice\n2. Full plan by SMS ({price})\n3. Rain outlook\n4. Soil\n5. Language\n6. Help",
     "ussd.next": "Plant {crop} in {season}. Then {crop2}, then {crop3}. How sure we are: {level}. Choose 2 on the main menu for the full plan by SMS.",
     "ussd.pay_confirm": "Full 3-season plan by SMS: {price}.\n1. Pay with MTN MoMo\n2. Cancel",
