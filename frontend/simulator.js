@@ -135,6 +135,13 @@ async function poll() {
           const res = await fetch(`/api/sim/momo/${m.ref}`, { method: "POST", headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ approve: b.dataset.ok === "1" }) });
           log(`POST /api/sim/momo/${m.ref.slice(0, 8)}… → ${res.status}`, JSON.stringify(await res.json(), null, 1));
+          // The USSD screen still says "Check your phone and approve": now that the payer has answered, say what happened.
+          if ($("ussd-end").style.display === "flex") {
+            $("ussd-end-body").textContent = !res.ok ? "Payment could not be completed. Please try again."
+              : b.dataset.ok === "1" ? `Payment of ${m.currency} ${m.amount} received. Thank you!
+Your plan has been sent by SMS: open Messages to read it.`
+              : "Payment was not approved. No plan was sent.";
+          }
           setTimeout(poll, 300);
         });
       }
