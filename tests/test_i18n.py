@@ -51,12 +51,12 @@ def test_technical_text_is_not_asked_for():
 
 
 def test_missing_translation_falls_back_to_english():
-    # Ateso is a Sunbird draft: a row Sunbird could not translate safely stays English
+    # Ateso is reviewed but a few rows have no translation yet: they show the English text
     en, teo_cat = i18n.catalog("en")["strings"], i18n.catalog("teo")["strings"]
     missing = [k for k in i18n.translatable_keys() if teo_cat.get(k, "") in ("", en[k])]
     assert missing and i18n.t("teo", missing[0]) == en[missing[0]]
     teo = next(l for l in i18n.languages() if l["code"] == "teo")
-    assert teo["status"] == "draft" and 0.5 < teo["coverage"] < 1
+    assert teo["status"] == "reviewed" and 0.5 < teo["coverage"] < 1
     with pytest.raises(i18n.UnknownLanguage):
         i18n.catalog("xx")
     with pytest.raises(i18n.UnknownLanguage):
@@ -112,7 +112,7 @@ def test_translation_spreadsheet_round_trip(tmp_path, monkeypatch):
         n, problems = translations.import_("teo")
         assert n == 1 and len(problems) == 1 and "issue.nitrogen" in problems[0]
         assert i18n.t("teo", "crop.maize") == "TEST-MAIZE"
-        assert i18n.catalog("teo")["meta"]["status"] == "draft"
+        assert i18n.catalog("teo")["meta"]["status"] == "reviewed"   # importing never changes the status
     finally:
         i18n.reload()
 

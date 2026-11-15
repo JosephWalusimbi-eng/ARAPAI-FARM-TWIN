@@ -103,8 +103,8 @@ def test_plan_text_in_every_language(lang):
     assert "2025-12-31" not in out["text"] and "Score" not in out["text"] and "rank" not in out["text"].lower()
     assert "FT-UG-0001" not in out["text"]                # no internal codes in a farmer's message
     assert out["text"].count(chr(10)) >= 4 and "-" in out["text"].split(chr(10))[1]   # one plain line per season
-    # Luganda has no short month names, so its real month names make each season line longer: one more SMS part
-    assert "{" not in out["text"] and len(out["segments"]) <= (4 if lang == "lg" else 3)
+    # Luganda and Ateso use full month names, which make each season line longer: one more SMS part
+    assert "{" not in out["text"] and len(out["segments"]) <= (4 if lang in ("lg", "teo") else 3)
     first_crop = engine.i18n.t(lang, f"crop.{res.rows[0]['rotation'][0]}")
     assert first_crop in out["text"]
 
