@@ -121,8 +121,7 @@ function renderLanguages() {
 function renderBanner() {
   const meta = PACK.i18n[LANG].meta, lines = [];
   if (meta.status === "draft") lines.push(t("lang.draft"));
-  if (meta.status === "reviewed") lines.push(t("lang.reviewed"));
-  $("draft").classList.toggle("ok", meta.status === "reviewed");
+  // A reviewed language shows no notice at all: only drafts and untranslated languages explain themselves.
   if (meta.status === "needs_translation") lines.push(`${meta.native_name}: ${meta.note}`);
   $("draft").style.display = lines.length ? "block" : "none";
   $("draft").textContent = lines.join(" ");

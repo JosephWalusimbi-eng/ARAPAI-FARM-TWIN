@@ -5,7 +5,7 @@
 // - Map library and map tiles from the internet: kept after first use (tiles capped).
 // - Farm data (/api/pack) is NOT cached here: the app stores it itself and shows its date,
 //   so it can tell the farmer whether the data is fresh or saved.
-const VERSION = "farmtwin-v15";
+const VERSION = "farmtwin-v16";
 const SHELL = `${VERSION}-shell`;
 const EXTERNAL = `${VERSION}-external`;
 const CROPS = ["maize", "sorghum", "finger_millet", "beans", "groundnut", "cowpea", "sunflower", "cassava"];
