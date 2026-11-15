@@ -124,9 +124,13 @@ async function poll() {
       if (box.dataset.ref !== m.ref) {
         box.dataset.ref = m.ref;
         box.innerHTML = `<div class="dialog"><b>Mobile Money</b><p style="font-size:14px">${esc(m.payer_message)}<br>Pay ${esc(m.currency)} ${esc(m.amount)}?</p>
-          <input type="password" placeholder="Enter PIN" maxlength="5" inputmode="numeric">
+          <input type="password" placeholder="Enter PIN (0000)" maxlength="4" inputmode="numeric"><div class="pinerr" style="color:#a4262c;font-size:12px;min-height:16px;margin-top:4px"></div>
           <div class="btns"><button data-ok="0">Reject</button><button data-ok="1">Approve</button></div></div>`;
         box.querySelectorAll("button").forEach(b => b.onclick = async () => {
+          if (b.dataset.ok === "1" && box.querySelector("input").value !== "0000") {
+            box.querySelector(".pinerr").textContent = "Wrong PIN. In this demo the PIN is 0000.";
+            return;
+          }
           box.style.display = "none";
           const res = await fetch(`/api/sim/momo/${m.ref}`, { method: "POST", headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ approve: b.dataset.ok === "1" }) });
