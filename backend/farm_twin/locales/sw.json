@@ -206,7 +206,7 @@
     "ussd.soil": "Udongo (umetolewa kutoka SoilGrids): {texture}, pH {ph}, kaboni ya kikaboni {oc} g/kg. Upimaji wa udongo kwenye shamba lako ni sahihi zaidi.",
     "ussd.soil_none": "Hakuna data ya udongo bado kwa shamba lako.",
     "ussd.lang_set": "Seti ya lugha: {name}.",
-    "ussd.help": "ARAPAI FARM TWIN hutumia data ya satelaiti ya NASA kulinganisha mzunguko wa mazao. Ni ushauri tu, si dhamana. Muulize afisa wako wa ugani. Piga simu {code} wakati wowote.",
+    "ussd.help": "ARAPAI FARM TWIN hutumia data ya satelaiti ya NASA kulinganisha mzunguko wa mazao. Ni ushauri tu, si dhamana. Piga simu {code} wakati wowote.",
     "ussd.invalid": "Chaguo lisilo sahihi. Tafadhali piga tena simu.",
     "ussd.error": "Pole, huduma iko bize. Tafadhali jaribu tena hivi karibuni.",
     "sms.receipt": "Malipo yamepokelewa: {price}. Asante.",

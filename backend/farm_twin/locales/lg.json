@@ -206,7 +206,7 @@
     "ussd.soil": "Ettaka (kiggyiddwa mu SoilGrids): {texture}, pH {ph}, organic carbon {oc} g/kg. Okukebera ettaka ku faamu yo kwe kusinga okwesigika.",
     "ussd.soil_none": "Tewali bubaka bwa ttaka ku faamu yo.",
     "ussd.lang_set": "Olulimi oluteekeddwa: {name}.",
-    "ussd.help": "ARAPAI FARM TWIN ekozesa data ya NASA okugeraageranya engeri z'okukyusakyusa ebirime. Magezi gokka. Buuza omukugu w'ebyobulimi. Kuba {code} essaawa yonna.",
+    "ussd.help": "ARAPAI FARM TWIN ekozesa data ya NASA okugeraageranya engeri z'okukyusakyusa ebirime. Magezi gokka. Kuba {code} essaawa yonna.",
     "ussd.invalid": "Okulonda okutali ku mutindo. Bambi kuba nate.",
     "ussd.error": "Nsonyiwa, obuweereza bujjudde. Bambi gezaako nate mu kaseera akatono.",
     "sms.receipt": "Okusasula kufuniddwa: {price}. Webale.",

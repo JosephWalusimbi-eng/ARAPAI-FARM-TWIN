@@ -217,7 +217,7 @@
     "ussd.soil": "Soil (estimate from SoilGrids): {texture}, pH {ph}, organic carbon {oc} g/kg. A soil test on your farm is more reliable.",
     "ussd.soil_none": "No soil data yet for your farm.",
     "ussd.lang_set": "Language set: {name}.",
-    "ussd.help": "ARAPAI FARM TWIN uses NASA satellite data to compare crop rotations. Advice only, not a guarantee. Ask your extension officer. Dial {code} anytime.",
+    "ussd.help": "ARAPAI FARM TWIN uses NASA satellite data to compare crop rotations. Advice only, not a guarantee. Dial {code} anytime.",
     "ussd.invalid": "Invalid choice. Please dial again.",
     "ussd.error": "Sorry, the service is busy. Please try again shortly.",
     "sms.receipt": "Payment received: {price}. Thank you.",
