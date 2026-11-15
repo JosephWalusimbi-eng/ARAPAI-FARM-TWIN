@@ -1,0 +1,15 @@
+fastapi>=0.110
+uvicorn>=0.29
+httpx>=0.27
+pandas>=2.0
+numpy>=1.24
+# S3 fallback for NASA POWER (official AWS Open Data Zarr archive)
+xarray>=2024.1
+zarr>=2.18,<3
+fsspec>=2024.1
+aiohttp>=3.9
+# SMAP: parse single-pixel OPeNDAP NetCDF responses in memory
+netCDF4>=1.6
+# Incoming datasets as GeoTIFF / Cloud-Optimized GeoTIFF (scripts/inspect_dataset.py)
+rasterio>=1.3
+pytest>=8.0

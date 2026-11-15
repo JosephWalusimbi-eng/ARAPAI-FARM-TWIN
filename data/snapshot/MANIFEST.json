@@ -1,0 +1,46 @@
+{
+ "created_at": "2026-11-14T00:31:21+00:00",
+ "note": "Copies of data/cache files the app needs. Refresh with scripts/snapshot.py create.",
+ "files": [
+  {
+   "name": "era5_openmeteo_1.7100_33.6100_2001-01-01_2025-12-31.json",
+   "bytes": 228397,
+   "sha256": "2f0042f8090f2d66499698ea20a7771a29c432c46373a36c006589701de7453a"
+  },
+  {
+   "name": "imerg_1.7100_33.6100_20010101_20251231.json",
+   "bytes": 162048,
+   "sha256": "0a6d9e1cacd29c27c65e7cbd0aeae6e03a3d55b9eb4fbd54b8ff37c12a71449e"
+  },
+  {
+   "name": "power_s3_1.7100_33.6100_20010101_20251231_2a48f12daf.json",
+   "bytes": 1017820,
+   "sha256": "4c55047047e8001e474d9a9d9458e721d1c713976ea5f0e344d58dfced878457"
+  },
+  {
+   "name": "smap_raw_SPL3SMP_E_006_r787_c2288.json",
+   "bytes": 609748,
+   "sha256": "da932f9ea8d5dad1ae2f8f639fdd88995d1e9618af02667ef9157b646f20e037"
+  },
+  {
+   "name": "soilgrids_1.7100_33.6100.json",
+   "bytes": 1054,
+   "sha256": "4e0d27534885627ff63257c92b6370b4d2618fefef3accf9098d7eb96f6d7040"
+  },
+  {
+   "name": "terrain_nasadem_1.7100_33.6100.json",
+   "bytes": 1009,
+   "sha256": "c49e0cecd6c7183129cdbad328eca6b0f72f142fed529b3614bfd6d2eb312cbf"
+  },
+  {
+   "name": "vegetation_landsat_1.7100_33.6100.json",
+   "bytes": 68275,
+   "sha256": "68f88c281aab7540d5af3db44091364e7e169425b640889969e4b4a6acfd7b62"
+  },
+  {
+   "name": "vegetation_modis_1.7100_33.6100.json",
+   "bytes": 113905,
+   "sha256": "ab61f6026cd785edf069a6d98aa6aa4cca5e344e885308793943fcfdbb9929c2"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+# Render Blueprint (https://render.com/docs/blueprint-spec): a free HTTPS web service from this repo.
+# Create it in the Render dashboard: New > Blueprint > pick this GitHub repo.
+# Secrets (Earthdata, Sunbird, MoMo, Africa's Talking) are NOT needed for the demo and are never
+# stored here; add them in the dashboard's Environment tab only if you switch on real services.
+services:
+  - type: web
+    name: farm-twin
+    runtime: docker
+    plan: free
+    region: frankfurt   # Render's closest region to Uganda
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: FARM_TWIN_POWER_SOURCE
+        value: s3
+      - key: FARM_TWIN_SIMULATOR   # keep the phone simulator on for judging
+        value: "1"

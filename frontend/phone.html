@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1f4d2b">
+  <title>ARAPAI FARM TWIN · Smartphone version</title>
+  <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; background: #f4f4f0; color: #0b0b0b; }
+    header { background: #1f4d2b; color: #fff; padding: 12px 20px; }
+    header h1 { margin: 0; font-size: 20px; }
+    header p { margin: 2px 0 0; font-size: 13px; opacity: .9; }
+    header a { color: #fff; }
+    main { display: flex; gap: 28px; padding: 24px 20px 40px; max-width: 1040px; margin: 0 auto; align-items: flex-start; flex-wrap: wrap; justify-content: center; }
+    .phone { width: 372px; flex: none; background: #161616; border-radius: 40px; padding: 14px; box-shadow: 0 8px 28px rgba(0,0,0,.3); }
+    .screen { background: #fff; border-radius: 28px; overflow: hidden; height: min(760px, calc(100vh - 110px)); min-height: 520px; }
+    .screen iframe { width: 100%; height: 100%; border: 0; display: block; }
+    .caption { text-align: center; font-size: 12px; color: #52514e; margin: 10px 0 0; max-width: 372px; }
+    .side { flex: 1 1 340px; max-width: 560px; min-width: 300px; }
+    .card { background: #fcfcfb; border-radius: 10px; padding: 16px 18px; box-shadow: 0 1px 3px rgba(0,0,0,.1); margin-bottom: 14px; }
+    .card h2 { margin: 0 0 8px; font-size: 17px; }
+    .card p, .card li { font-size: 14px; line-height: 1.5; }
+    .card ol, .card ul { margin: 6px 0 0; padding-left: 20px; }
+    .qrrow { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+    .qr { width: 190px; height: 190px; flex: none; border: 1px solid #e1e0d9; border-radius: 10px; padding: 6px; background: #fff; box-sizing: border-box; }
+    .qr img { width: 100%; height: 100%; display: block; }
+    .link { display: inline-block; background: #f2a93b; color: #1b1f1a; font-weight: 800; font-size: 18px; text-decoration: none;
+            padding: 12px 20px; border-radius: 10px; word-break: break-all; }
+    .link:hover { background: #ffc04d; }
+    code { background: #f1f1ee; padding: 1px 6px; border-radius: 4px; font-size: 13px; }
+    .note { font-size: 12px; color: #52514e; }
+    .onphone { display: none; }
+    @media (max-width: 720px) {
+      /* already on a phone: no need for a phone-shaped frame, send the visitor straight to the app */
+      .phone, .caption { display: none; }
+      .onphone { display: block; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <p style="margin:0 0 6px"><a href="/">&larr; Back to the ARAPAI FARM TWIN app</a></p>
+  <h1>ARAPAI FARM TWIN &middot; smartphone version</h1>
+  <p>The same app a farmer uses on a smartphone: it installs from the browser, downloads the farm&rsquo;s NASA data once, and then keeps working without internet.</p>
+</header>
+<main>
+  <div>
+    <div class="phone">
+      <div class="screen">
+        <iframe src="/?embed=1" title="ARAPAI FARM TWIN as seen on a smartphone" loading="eager"></iframe>
+      </div>
+    </div>
+    <p class="caption">This is the live app, shown at smartphone width. You can scroll it, move the sliders and save plans.</p>
+  </div>
+
+  <div class="side">
+    <div class="card onphone">
+      <h2>You are on a phone already</h2>
+      <p><a class="link" href="/">Open the app</a></p>
+    </div>
+
+    <div class="card">
+      <h2>Open it on your own smartphone</h2>
+      <div class="qrrow">
+        <div class="qr"><img src="/static/phone-qr.svg" alt="QR code that opens https://farm-twin-5n9n.onrender.com/"></div>
+        <div>
+          <p style="margin-top:0">Point your phone camera at the code, or type this address:</p>
+          <p><a class="link" href="https://farm-twin-5n9n.onrender.com/">farm-twin-5n9n.onrender.com</a></p>
+          <p class="note">The first load can take up to a minute if the free server has been asleep.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Install it like an app</h2>
+      <ul>
+        <li><b>Android (Chrome):</b> open the menu (&#8942;) and choose <b>Install app</b> or <b>Add to Home screen</b>.</li>
+        <li><b>iPhone (Safari):</b> tap <b>Share</b>, then <b>Add to Home Screen</b>.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Try it with no internet (30 seconds)</h2>
+      <ol>
+        <li>Open the app once while you are online. This downloads the farm&rsquo;s NASA data. Wait for the line &ldquo;NASA data up to &hellip;&rdquo;.</li>
+        <li>Turn on airplane mode.</li>
+        <li>Open the app again. The header says <b>Offline</b>, and the ranking is still there.</li>
+        <li>Move a weight slider, change last season&rsquo;s crop, or press <b>Save</b>. Everything works on the phone.
+            A saved plan waits for internet and is sent when you are back online.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>No smartphone?</h2>
+      <p>Farmers with a basic phone get the same advice by USSD and SMS.
+         <a href="/simulator">Try the phone simulator</a> and dial <code>*384*2026#</code>.</p>
+      <p class="note">SMS and mobile money are simulated in this prototype.</p>
+    </div>
+
+    <p class="note">Without internet the app uses the data it already downloaded and shows its date; new NASA data needs a connection. We tested offline mode in desktop Chrome. Installing and offline use on real phones is the next thing we will test.</p>
+  </div>
+</main>
+</body>
+</html>

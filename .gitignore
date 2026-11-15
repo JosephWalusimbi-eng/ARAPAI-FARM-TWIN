@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+data/cache/
+.venv/
+~$*.docx
+
+.env
+*.bak
+data/plans/
+data/channels/
+data/incoming/
+
+# Local screenshots and editor settings
+Screenshot*.png
+.vscode/
+
+# Working files for the team: kept on disk, not published in the repo
+submission/
+translations/

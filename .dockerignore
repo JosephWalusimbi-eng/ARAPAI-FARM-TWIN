@@ -1,0 +1,19 @@
+# Never ship secrets or local state into an image.
+.env
+.env.*
+!.env.example
+.git
+data/cache/
+data/plans/
+data/channels/
+**/__pycache__/
+.pytest_cache/
+*.bak
+*.tmp
+tests/
+translations/
+FARM TWIN.docx
+
+# Working files for the team: never baked into an image
+submission/
+translations/
